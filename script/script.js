@@ -2,7 +2,7 @@ let sliderImages = [
 
     {
         text: 'Rostov-on-Don, Admiral',
-        url: '../itogtest/images/theme.jpg',
+        url: './images/theme.jpg',
         city: `Rostov-on-Don LCD admiral`,
         area: '81 m2',
         time: '3.5 months',
@@ -11,7 +11,7 @@ let sliderImages = [
 
     {
         text: 'Sochi Thieves',
-        url: '../itogtest/images/theme-2.jpg',
+        url: './images/theme-2.jpg',
         city: `Sochi Thieves`,
         area: '105 m2',
         time: '4 months',
@@ -20,7 +20,7 @@ let sliderImages = [
 
     {
         text: 'Rostov-on-Don Patriotic',
-        url: '../itogtest/images/theme-3.jpg',
+        url: './images/theme-3.jpg',
         city: `Rostov-on-Don Patriotic`,
         area: '93 m2',
         time: '3 months',
@@ -133,7 +133,7 @@ function initDots(){
 
     sliderImages.forEach((image, index) => {
 
-        let dot = `<div class = "dot-item n${index} ${index === 0? "active" : ""}" data-index = "${index}"><img src="../itogtest/images/dot.svg" alt=""></div>`;
+        let dot = `<div class = "dot-item n${index} ${index === 0? "active" : ""}" data-index = "${index}"><img src="./images/dot.svg" alt=""></div>`;
         sliderDots.innerHTML += dot;
     
     })
@@ -175,10 +175,12 @@ decorNames.querySelectorAll(".example-image").forEach(item => {
 
 
 
-
-
 initSlider();
 initArrows();
 initDots();
 initDecorNames();
 initDescription()
+
+
+
+
